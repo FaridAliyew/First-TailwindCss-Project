@@ -2,16 +2,14 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    container: {
-      padding: '2rem'
-    },
     extend: {
-      fontFamily: {
-        itim: ["Itim", "cursive"],
-        marcellus: ["Marcellus", "serif"]
+      
+      backgroundImage: {
+        'header-img': "url('/src/images/header.jpg')"
       },
-      colors: {
-        'color-one': '#a8329d'
+      colors:{
+        'header-bg-color':'rgba(120, 53, 15, 0.30)',
+        'button-color':'rgba(120, 53, 15)'
       }
     },
   },
