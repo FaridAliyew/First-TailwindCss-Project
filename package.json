@@ -1,14 +1,7 @@
 {
-  "name": "lesson1",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "npx tailwindcss -i ./input.css -o ./src/css/styles.css --watch"
+    "start": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.4.14"
   }

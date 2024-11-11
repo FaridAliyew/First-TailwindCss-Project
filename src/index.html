@@ -4,20 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First Tailwind CSS Project</title>
-    <link href="./css/styles.css" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tailwind Css</title>
 </head>
 
 <body>
-    <header class="relative bg-header-img bg-cover bg-center h-screen">
+    <header class="relative bg-header-img bg-cover bg-center h-screen z-50">
         <!-- Overlay -->
         <div class="absolute inset-0 bg-header-bg-color"></div>
 
         <div class="relative flex justify-between p-10">
             <div class="relative">
-                <button id="dropdownButton" class="text-2xl text-white rounded-lg focus:outline-none">
+                <button id="dropdownButton" class="text-1xl md:text-2xl text-white rounded-lg focus:outline-none">
                     Menu
                 </button>
 
@@ -30,21 +29,48 @@
             </div>
 
             <div>
-                <a href="#" class="text-white text-2xl font-bold">IMPULSE</a>
+                <a href="#" class="text-white text-1xl md:text-2xl font-bold">IMPULSE</a>
             </div>
 
             <div>
-                <i class="fa-regular fa-envelope text-white text-3xl cursor-pointer"></i>
+                <i class="fa-regular fa-envelope text-white text-2xl md:text-4xl cursor-pointer"></i>
             </div>
         </div>
 
-        <div class="mt-40">
-            <h1 class="relative text-white flex items-center justify-center  text-6xl">A taste of every lifestyle</h1>
-            <button class="block mx-auto my-auto text-white bg-button-color py-4 px-7 font-bold mt-9">READ THE BLOG</button>
+        <div class="mt-40 relative">
+            <h1 class="relative text-white text-center text-3xl sm:text-5xl md:text-6xl font-PlayfairDisplay font-bold">
+                A taste of every lifestyle</h1>
+            <button class="block mx-auto my-auto text-white bg-button-color py-4 px-7 font-bold mt-9">READ THE
+                BLOG</button>
         </div>
 
+        <div class="text-white underline underline-offset-4 font-bold flex justify-around mt-48 relative">
+            <a href="#">FIND OUT MORE</a>
+            <a href="#">GET IN TOUCH</a>
+        </div>
 
     </header>
+
+    <section class="grid grid-cols-2 md:gap-14 mt-10 p-20">
+        <div class="col-span-2 md:col-span-1">
+            <img src="images/Section.png" class="w-96 md:w-full" alt="persons">
+        </div>
+        <div class="h-full grid mt-9 md:mt-0 col-span-1 justify-center items-center">
+            <div class="w-full md:w-10/12">
+                <hr class="border-button-color border-solid border-4 w-32">
+                <h1 class="font-bold text-3xl text-gray-700 mt-5">This is my third & latest post</h1>
+                <p class="mt-5">Bring to the table win-win survival strategies to ensure proactive domination. At the
+                    end of the day, going forward, a new normal that has evolved from generation X is on the runway
+                    heading towards a streamlined cloud solution.</p>
+                <button
+                    class="block mt-4 border text-button-color border-button-color py-4 px-5 hover:bg-button-color hover:text-white">READ
+                    MORE</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-person h-custom w-full bg-no-repeat bg-cover mt-6"></div>
+
 
     <script src="js/script.js"></script>
 </body>
